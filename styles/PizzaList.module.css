@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap');
+
+.container{
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 4rem;
+      font-family: 'Lobster Two', cursive;
+
+}
+.title{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.desc{
+      margin:  1rem 0;
+      font-size: 16px;
+      color:teal;
+      width:60%;
+      /* border: 2px dotted gray; */
+      padding: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.wrapper{
+      width:100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      
+}
+@media screen and (max-width:480px) {
+      .title{
+            font-size: 20px;;
+            
+      }
+      .desc{
+            font-size: 10px;;
+           
+      }
+      
+}

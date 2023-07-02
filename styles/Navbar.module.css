@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap");
+
+/* font-family: 'Lobster Two', cursive; */
+/* font-family: 'Pacifico', cursive; */
+
+.container {
+      height: 100px;
+      padding: 0px 50px;
+      /* background-color: rgb(9, 14, 18); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  font-family: "Lobster Two", cursive;
+  font-family: 'Pacifico', cursive;
+  transition: background-color 0.5s ease-in-out;
+}
+.container.scrolled {
+  background-color: rgba(
+    18,
+    19,
+    19,
+    0.1
+  ); /* background color after scrolling */
+  backdrop-filter: blur(10px);
+}
+.item {
+  flex: 1;
+  display: flex;
+}
+.item:nth-child(2) {
+  flex: 3;
+  /* background-color: white; */
+}
+.item:nth-child(3) {
+  justify-content: flex-end;
+}
+.callButton {
+  background-color: teal;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.texts {
+  margin-left: 20px;
+  color: teal;
+  cursor: pointer;
+
+}
+.text:first-child {
+  font-size: 11px;
+  font-weight: 500;
+}
+.text:last-child {
+  font-size: 10px;
+  font-weight: bold;
+}
+.list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: teal;
+}
+.listItem {
+  margin: 20px;
+  font-weight: 50;
+  cursor: pointer;
+  color: orange;
+}
+.pizzaNav{
+      color:orange;
+      font-size:1.9rem;
+}
+.cart {
+  color: orange;
+  display: flex;
+  gap: 5px;
+  font-size: 1.6rem;
+  position: relative;
+}
+.counter {
+  font-size: 0.8rem;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: teal;
+  font-weight: bold;
+  color: white;
+font-family: 'Lobster Two', cursive;
+
+ 
+}
+
+@media screen and (max-width: 720px) {
+  .item:nth-child(2) {
+    display: none;
+  }
+  .container {
+    background-color: rgba(
+      18,
+      19,
+      19,
+      0.7
+    ); /* background color after scrolling */
+    backdrop-filter: blur(10px);
+  }
+  .texts .text {
+    font-size: 0.6rem;
+    margin-top: 5px;
+  }
+  .callButton {
+    width: 30px;
+    height: 30px;
+  }
+  .cart {
+    font-size: 1.3rem;
+  }
+
+  .counter {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .item:nth-child(1) {
+    margin-left: -2rem;
+  }
+  .item:nth-child(3) {
+    margin-right: -2rem;
+  }
+}

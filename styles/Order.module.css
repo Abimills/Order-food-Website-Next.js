@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap');
+
+/* font-family: 'Lobster Two', cursive; */
+/* font-family: 'Pacifico', cursive; */
+
+.container{
+      padding: 50px;
+      display: flex;
+      margin-top: 7rem;
+      margin-bottom: 7rem;
+      flex-wrap: wrap;
+      font-family: 'Pacifico', cursive;
+}
+
+.left{
+      width:70%;
+      /* background-color: red; */
+}
+.right{
+      width: 30%;
+}
+.tables{
+      width:100%;
+      text-align: left;
+      margin-bottom: 50px;
+}
+.row:last-child{
+      width:80%;
+      display: flex;
+      justify-content: space-around;
+}
+.done{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+.inProgress{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+      animation :  inProgress 1s ease infinite alternate ;
+}
+@keyframes  inProgress {
+      from{
+            opacity: 0;
+      }
+      to{
+            opacity: 1;
+      }
+}
+.undone{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0.3;
+}
+.checkedIcon{
+      color:rgb(156, 223, 57);
+      font-size: 2rem;
+}
+.otherIcon{
+      color:teal;
+      font-size: 3rem;
+}
+.undone .checkedIcon, .inProgress .checkedIcon{
+ display: none;     
+}
+.wrapper{
+      width:90%;
+      /* max-height: 300px;; */
+      background-color: teal;
+      padding: 50px;
+      padding-top: 10px ;
+      display: flex;
+      flex-direction:column ;
+      color:white;
+      gap:1rem;
+}
+.totalTextTitle{
+      margin-right: 10px;
+}
+.button{
+      background-color: #fff;
+      height: 30px;
+      color: teal;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+      outline: none;
+      border: none;
+}
+ .table th{
+            font-size: 0.7rem;
+            border:1px solid gray;
+        
+           
+      }
+
+        .row:nth-child(2){
+width: 100%;
+        }
+
+@media screen and (max-width:720px) {
+      .container{
+            padding: 0;
+            width:100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+           
+      }
+      .button{
+            width:200px;
+      }
+      .wrapper{
+            justify-content: center;
+            align-items: center;
+            font-weight: 100;
+          
+
+      }
+      .otherIcon{
+            font-size: 1.7rem;
+      }
+      .tables {
+            /* flex-wrap: wrap; */
+            /* border:1px solid gray; */
+            margin: 2rem;
+      }
+      .table th{
+            font-size: 0.7rem;
+            border:1px solid gray;
+        
+           
+      }
+      tr.tableValue{
+            font-size: 0.7rem;
+            border:1px solid gray;
+
+      }
+      .checkedIcon{
+            font-size: 1.4rem;
+
+      }
+      .progress{
+            font-size: 0.7rem;
+      }
+      .left{
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+      }
+      .row{
+            width: 100%;;
+            margin-right: 3rem;
+            
+      }
+      .row:nth-child(2){
+            margin: 0rem;
+            width:100%;
+            /* background-color: red; */
+
+      }
+      .right{
+            width:100%;
+           font-weight: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+           
+      }
+     
+}
